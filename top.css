@@ -1,0 +1,159 @@
+
+@charset "UTF-8";
+/* CSS Document */
+/* Base */
+html { font-family: "Ropa Sans", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif; font-size: 62.5%; line-height: 1.5; }
+body { background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); font-size: 1.6rem; }
+body{
+-webkit-font-smoothing:antialiased;/*マックに対して　少し文字が太くなる使用をなくす*/
+-moz-osx-font-smoothing:grayscale;
+font-feature-settings: "palt";   /*字詰め*/}
+h1, h2, h3, p, ul { margin: 0;}
+ul { padding-left: 0; }
+ul li { list-style-type: none; }
+a { color: inherit; text-decoration: none; }
+img { vertical-align: middle;max-width: 100%; height: auto;  }
+
+/*header sub*/
+
+html, body {
+  overflow: auto;
+  height: 100vh;
+}
+
+body.open {
+  overflow: hidden;
+}
+
+
+/*TOP screen*/
+
+.cb-slideshow,
+.cb-slideshow:after {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 0;
+}
+.cb-slideshow:after {
+    content: '';
+    background: transparent url(../images/pattern.png) repeat top left;
+}
+.cb-slideshow li span {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: transparent;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: none;
+    opacity: 0;
+    z-index: 0;
+	-webkit-backface-visibility: hidden;
+    -webkit-animation: imageAnimation 36s linear infinite 0s;
+    -moz-animation: imageAnimation 36s linear infinite 0s;
+    -o-animation: imageAnimation 36s linear infinite 0s;
+    -ms-animation: imageAnimation 36s linear infinite 0s;
+    animation: imageAnimation 36s linear infinite 0s;
+}
+.cb-slideshow li div {
+    z-index: 1000;
+    position: absolute;
+    bottom: 10px;
+    left: 0px;
+    width: 100%;
+    text-align: right;
+    opacity: 0;
+    -webkit-animation: titleAnimation 36s linear infinite 0s;
+    -moz-animation: titleAnimation 36s linear infinite 0s;
+    -o-animation: titleAnimation 36s linear infinite 0s;
+    -ms-animation: titleAnimation 36s linear infinite 0s;
+    animation: titleAnimation 36s linear infinite 0s;
+}
+.cb-slideshow li div h3 {
+    font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
+    font-size: 160px;
+    padding: 0 30px;
+    line-height: 120px;
+    color: rgba(169,3,41, 0.8);
+}
+.cb-slideshow li:nth-child(1) span { background-image: url(../images/6.jpg) }
+.cb-slideshow li:nth-child(2) span {
+    background-image: url(../images/5.jpg);
+    -webkit-animation-delay: 6s;
+    -moz-animation-delay: 6s;
+    -o-animation-delay: 6s;
+    -ms-animation-delay: 6s;
+    animation-delay: 6s;
+}
+.cb-slideshow li:nth-child(3) span {
+    background-image: url(../images/4.jpg);
+    -webkit-animation-delay: 12s;
+    -moz-animation-delay: 12s;
+    -o-animation-delay: 12s;
+    -ms-animation-delay: 12s;
+    animation-delay: 12s;
+}
+.cb-slideshow li:nth-child(4) span {
+    background-image: url(../images/3.jpg);
+    -webkit-animation-delay: 18s;
+    -moz-animation-delay: 18s;
+    -o-animation-delay: 18s;
+    -ms-animation-delay: 18s;
+    animation-delay: 18s;
+}
+.cb-slideshow li:nth-child(5) span {
+    background-image: url(../images/2.jpg);
+    -webkit-animation-delay: 24s;
+    -moz-animation-delay: 24s;
+    -o-animation-delay: 24s;
+    -ms-animation-delay: 24s;
+    animation-delay: 24s;
+}
+.cb-slideshow li:nth-child(6) span {
+    background-image: url(../images/1.jpg);
+    -webkit-animation-delay: 30s;
+    -moz-animation-delay: 30s;
+    -o-animation-delay: 30s;
+    -ms-animation-delay: 30s;
+    animation-delay: 30s;
+}
+.cb-slideshow li:nth-child(2) div {
+    -webkit-animation-delay: 6s;
+    -moz-animation-delay: 6s;
+    -o-animation-delay: 6s;
+    -ms-animation-delay: 6s;
+    animation-delay: 6s;
+}
+.cb-slideshow li:nth-child(3) div {
+    -webkit-animation-delay: 12s;
+    -moz-animation-delay: 12s;
+    -o-animation-delay: 12s;
+    -ms-animation-delay: 12s;
+    animation-delay: 12s;
+}
+.cb-slideshow li:nth-child(4) div {
+    -webkit-animation-delay: 18s;
+    -moz-animation-delay: 18s;
+    -o-animation-delay: 18s;
+    -ms-animation-delay: 18s;
+    animation-delay: 18s;
+}
+.cb-slideshow li:nth-child(5) div {
+    -webkit-animation-delay: 24s;
+    -moz-animation-delay: 24s;
+    -o-animation-delay: 24s;
+    -ms-animation-delay: 24s;
+    animation-delay: 24s;
+}
+.cb-slideshow li:nth-child(6) div {
+    -webkit-animation-delay: 30s;
+    -moz-animation-delay: 30s;
+    -o-animation-delay: 30s;
+    -ms-animation-delay: 30s;
+    animation-delay: 30s;
+}

@@ -1,0 +1,101 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*
+ * Base
+ */
+.aside_text{
+	font-size: 1.8rem;
+	color: rgba(229,229,218,1.00);
+	font-family: kan415typos-std, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+.nav_text{
+	    font-weight: bolder;
+	font-size: 2rem;
+}
+.page-main {
+    position: relative;
+	z-index: 1;
+
+}
+
+.img_header{
+	position: relative;
+    left: -15%;
+    padding-top: 40px;
+}
+
+.page-main > aside {
+ background-color: rgba(229,78,78,1.00);
+    width: 250px;
+    height: 100%;
+    top: 0;
+    left: -250px;
+    position: fixed;
+	
+}
+
+.page-main > aside ul {
+    margin: 0;
+    padding: 0;
+    top: 50px;
+    left: 114px;
+    position: absolute;
+}
+
+.page-main > aside li {
+    margin: 0 0 20px;
+    list-style: none;
+}
+
+.page-main > aside button {
+    background-color: rgba(229,78,78,1.00);
+    display: block;
+    position: absolute;
+    top: 150px;
+    left: 250px;
+    width: 34px;
+    height: 92px;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.page-footer {
+    background-color: #656565;
+}
+
+.page-footer small {
+    display: block;
+    color: #fff;
+    font-size: 11px;
+    text-align: right;
+    width: 976px;
+    margin: 0 auto;
+    height: 120px;
+    line-height: 120px;
+    letter-spacing: 0.15em;
+}
+
+.page-footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/*
+ * Helpers
+ */
+
+/* Clearfix */
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
