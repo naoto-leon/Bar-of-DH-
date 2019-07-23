@@ -37,10 +37,9 @@ border-bottom: 60px solid  rgba(229,78,78,1.00);
 
 ユーザーの選択欄と実際のデータベースへの書き換えを変える事を中心に全体の設計をおこなった。 
 
-`
-echo '<option value="愛を守りし">友人と楽しく過ごす</option>';  
-echo '<option value="逆鱗する">アウトドアや運動をして過ごす</option>';  
-echo '<option value="深淵に漂う">家で過ごす</option>';  
-echo '<option value="宿命を背負いし">自己投資や仕事に備える</option>'; 
-`
-echo '<option value="宿命を背負いし">自己投資や仕事に備える</option>';   
+
+`echo '<option value="愛を守りし">友人と楽しく過ごす</option>';  `  
+`echo '<option value="逆鱗する">アウトドアや運動をして過ごす</option>';`    
+`echo '<option value="深淵に漂う">家で過ごす</option>'; `   
+`echo '<option value="宿命を背負いし">自己投資や仕事に備える</option>'; `  
+
