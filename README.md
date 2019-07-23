@@ -10,3 +10,24 @@
 
 ***
 
+######斜めのデザイン
+
+特に難しいことはしていないが、IPhone5SEやXでTextに微妙なずれが生じたりするため、transform rotateの値を都度調整する必要があり、やたらと@media screen
+の多いCSSとなってしまった。　
+
+斜めラインのcssはBorderで実装
+`
+section_5::after {   
+content: '';   
+display: block;
+position: absolute;  
+left: 0;
+bottom: 0;
+border-top: 60px solid rgba(229,229,218,1.00);
+border-left: 50vw solid rgba(229,229,218,1.00);
+border-right: 50vw solid rgba(229,78,78,1.00);
+border-bottom: 60px solid rgba(229,78,78,1.00);
+}
+`
+
+***
