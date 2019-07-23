@@ -41,8 +41,3 @@ echo '<option value="愛を守りし">友人と楽しく過ごす</option>';
 echo '<option value="逆鱗する">アウトドアや運動をして過ごす</option>';  
 echo '<option value="深淵に漂う">家で過ごす</option>'; 
 echo '<option value="宿命を背負いし">自己投資や仕事に備える</option>';  
-
-
-
-　
-
